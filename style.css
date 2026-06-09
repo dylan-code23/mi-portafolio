@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #1a1a2e;
+  color: #ffffff;
+}
+
+/* NAVBAR */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 3rem;
+  background-color: #16213e;
+}
+
+.logo {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #e94560;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+nav ul a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+nav ul a:hover {
+  color: #e94560;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 6rem 2rem;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero h1 span {
+  color: #e94560;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #a8a8b3;
+}
+
+/* SECCIONES */
+section {
+  padding: 4rem 3rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #e94560;
+  margin-bottom: 1.5rem;
+}
+
+/* HABILIDADES */
+.habilidades-grid {
+  display: flex;
+  gap: 1rem;
+}
+
+.habilidad {
+  background-color: #16213e;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  font-weight: bold;
+  color: #e94560;
+  border: 1px solid #e94560;
+}
