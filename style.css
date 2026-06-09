@@ -88,3 +88,45 @@ h2 {
   color: #e94560;
   border: 1px solid #e94560;
 }
+
+/* REDES SOCIALES */
+.redes {
+  display: flex;
+  gap: 2rem;
+}
+
+.redes a {
+  text-decoration: none;
+}
+
+.red {
+  background-color: #16213e;
+  padding: 2rem;
+  border-radius: 12px;
+  text-align: center;
+  border: 1px solid #e94560;
+  width: 120px;
+  transition: transform 0.3s;
+}
+
+.red:hover {
+  transform: translateY(-5px);
+}
+
+.red span {
+  font-size: 2rem;
+}
+
+.red p {
+  color: #ffffff;
+  margin-top: 0.5rem;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 2rem;
+  background-color: #16213e;
+  color: #a8a8b3;
+  font-size: 0.9rem;
+}
