@@ -130,3 +130,20 @@ footer {
   color: #a8a8b3;
   font-size: 0.9rem;
 }
+
+/* BOTÓN */
+.hero button {
+  margin-top: 2rem;
+  padding: 0.8rem 2rem;
+  background-color: #e94560;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.hero button:hover {
+  background-color: #c73652;
+}
