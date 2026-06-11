@@ -147,3 +147,71 @@ footer {
 .hero button:hover {
   background-color: #c73652;
 }
+
+/* MODO CLARO */
+body.claro {
+  background-color: #f5f5f5;
+  color: #1a1a2e;
+}
+
+body.claro nav {
+  background-color: #ffffff;
+}
+
+body.claro .hero p {
+  color: #555555;
+}
+
+body.claro .habilidad {
+  background-color: #ffffff;
+}
+
+body.claro .red {
+  background-color: #ffffff;
+}
+
+body.claro footer {
+  background-color: #e0e0e0;
+  color: #333333;
+}
+
+/* BOTÓN TEMA */
+#btn-tema {
+  background: none;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.3s;
+}
+
+#btn-tema:hover {
+  background-color: #e94560;
+  border-color: #e94560;
+}
+
+/* BOTÓN TOGGLE */
+.btn-toggle {
+  background: none;
+  border: 1px solid #e94560;
+  color: #e94560;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  font-size: 0.8rem;
+  margin-left: 0.5rem;
+  transition: all 0.3s;
+}
+
+.btn-toggle:hover {
+  background-color: #e94560;
+  color: white;
+}
+
+/* ANIMACIÓN OCULTAR */
+.oculto {
+  display: none;
+}

@@ -9,6 +9,7 @@
   <body>
     <nav>
       <span class="logo">👨‍💻 Dylan</span>
+      <button id="btn-tema">🌙 Modo claro</button>
       <ul>
         <li><a href="#sobre-mi">Sobre mí</a></li>
         <li><a href="#habilidades">Habilidades</a></li>
@@ -23,43 +24,53 @@
     </section>
 
     <section id="sobre-mi">
-      <h2>Sobre mí</h2>
-      <p>Soy de Arequipa, Perú. Me apasiona la programación y estoy construyendo mis habilidades para trabajar como desarrollador fullstack.</p>
-    </section>
+  <h2>Sobre mí <button class="btn-toggle" data-seccion="contenido-sobre-mi">▼</button></h2>
+  <div id="contenido-sobre-mi">
+    <p>Soy de Arequipa, Perú. Me apasiona la programación y estoy construyendo mis habilidades para trabajar como desarrollador fullstack.</p>
+  </div>
+</section>
 
-    <section id="habilidades">
-      <h2>Habilidades</h2>
-      <div class="habilidades-grid">
-        <div class="habilidad">HTML</div>
-        <div class="habilidad">CSS</div>
-        <div class="habilidad">JavaScript</div>
-      </div>
-    </section>
+<section id="habilidades">
+  <h2>Habilidades <button class="btn-toggle" data-seccion="contenido-habilidades">▼</button></h2>
+  <div id="contenido-habilidades">
+    <div class="habilidades-grid">
+      <div class="habilidad">HTML</div>
+      <div class="habilidad">CSS</div>
+      <div class="habilidad">JavaScript</div>
+    </div>
+  </div>
+</section>
 
-    <section id="proyectos">
-      <h2>Proyectos</h2>
-      <p>Próximamente...</p>
-    </section>
-    <section id="contacto">
-      <h2>Contáctame</h2>
-      <div class="redes">
-        <a href="https://github.com/dylan-code23" target="_blank">
-          <div class="red">
-            <span>🐙</span>
-            <p>GitHub</p>
-          </div>
-        </a>
-        <a href="https://linkedin.com/in/TuUsuario" target="_blank">
-          <div class="red">
-            <span>💼</span>
-            <p>LinkedIn</p>
-          </div>
-        </a>
-      </div>
-    </section>
+<section id="proyectos">
+  <h2>Proyectos <button class="btn-toggle" data-seccion="contenido-proyectos">▼</button></h2>
+  <div id="contenido-proyectos">
+    <p>Próximamente...</p>
+  </div>
+</section>
+
+<section id="contacto">
+  <h2>Contáctame <button class="btn-toggle" data-seccion="contenido-contacto">▼</button></h2>
+  <div id="contenido-contacto">
+    <div class="redes">
+      <a href="https://github.com/dylan-code23" target="_blank">
+        <div class="red">
+          <span>🐙</span>
+          <p>GitHub</p>
+        </div>
+      </a>
+      <a href="https://linkedin.com/in/TuUsuario" target="_blank">
+        <div class="red">
+          <span>💼</span>
+          <p>LinkedIn</p>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
 
     <footer>
       <p>Hecho con 💻 por Dylan — Arequipa, Perú</p>
+      <p>Visitas a esta página: <span id="contador">0</span></p>
     </footer>
     <script src="script.js"></script>
   </body>

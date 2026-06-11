@@ -32,4 +32,49 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   });
 
+  // MODO OSCURO / CLARO
+  const btnTema = document.getElementById("btn-tema");
+
+  btnTema.addEventListener("click", function() {
+    document.body.classList.toggle("claro");
+
+    if (document.body.classList.contains("claro")) {
+      btnTema.textContent = "🌙 Modo oscuro";
+    } else {
+      btnTema.textContent = "☀️ Modo claro";
+    }
+  });
+
+  // CONTADOR DE VISITAS
+  const contador = document.getElementById("contador");
+  
+  let visitas = localStorage.getItem("visitas");
+  
+  if (visitas === null) {
+    visitas = 1;
+  } else {
+    visitas = parseInt(visitas) + 1;
+  }
+  
+  localStorage.setItem("visitas", visitas);
+  contador.textContent = visitas;
+
+  // MOSTRAR Y OCULTAR SECCIONES
+  const botonesToggle = document.querySelectorAll(".btn-toggle");
+
+  botonesToggle.forEach(function(boton) {
+    boton.addEventListener("click", function() {
+      const idSeccion = boton.getAttribute("data-seccion");
+      const seccion = document.getElementById(idSeccion);
+
+      seccion.classList.toggle("oculto");
+
+      if (seccion.classList.contains("oculto")) {
+        boton.textContent = "▶";
+      } else {
+        boton.textContent = "▼";
+      }
+    });
+  });
+
 });
