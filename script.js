@@ -77,4 +77,17 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   });
 
+  // HABILIDADES DINÁMICAS
+  let habilidades = ["HTML", "CSS", "JavaScript", "React"];
+
+  const grid = document.getElementById("grid-habilidades");
+
+  habilidades.forEach(function(habilidad) {
+    let div = document.createElement("div");
+    div.classList.add("habilidad");
+    div.textContent = habilidad;
+    grid.appendChild(div);
+  
+});
+
 });
